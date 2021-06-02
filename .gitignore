@@ -1,2 +1,6 @@
-#############
+############# framework and libraries
 /venv
+
+
+############ other stuff
+main.py
