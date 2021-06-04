@@ -49,7 +49,7 @@ Advertisement :
 -- Advertisement Cost Management (Screen) 
   
   
-#Endpoints
+#Sample Endpoints
 | HTTP Method | URI | Action | Why |
 |-------------|:---:|:------|:----|
 | GET | https://[hostname]/iam_farmer/api/v1.0/vendors | Retreive list of all vendors signed up | Can be helpful with marketing/community outreach |
