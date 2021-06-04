@@ -51,7 +51,7 @@ Advertisement :
   
 #Endpoints
 | HTTP Method | URI | Action | Why |
-|-------------|:---:|:------:|----:|
+|-------------|:---:|------:|----:|
 | GET | https://[hostname]/iam_farmer/api/v1.0/vendors | Retreive list of all vendors signed up | Can be helpful with marketing/community outreach |
 | GET | https://[hostname]/iam_farmer/api/v1.0/vendors/[vendor_id] | Retrieve information associated with specific vendor | For Vendor Homescreen|
 | GET | https://[hostname]/iam_farmer/api/v1.0/vendors/[vendor_id]/inventory | Retreive list of all bins and products and counts owned by vendor | For Inventory Management Screen|
