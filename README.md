@@ -1,8 +1,8 @@
 ##API Design  
 When thinking about making APIs, there are a few perspectives we need to consider :  
 1- The data the front end needs - something as simple as a data query - GET  
-2- The processing tha needs to happen on server side and results rendered to front end - probably also GET?  
-3- The data that needs to get saved into the backend - we need POST and PUT APIs   
+2- The processing that needs to happen on server side and results rendered to front end - probably also GET? Depends on specific fxn  
+3- The data that needs to get saved into the backend -  POST and PUT APIs   
 
 
 ##iam_farmer  
@@ -49,8 +49,20 @@ Advertisement :
 -- Advertisement Cost Management (Screen) 
   
   
-#Sample Endpoints  
-  
+#Endpoints
+| HTTP Method | URI | Action | Why |
+|-------------|:---:|:------:|----:|
+| GET | https://[hostname]/iam_farmer/api/v1.0/vendors | Retreive list of all vendors signed up | Can be helpful with marketing/community outreach |
+| GET | https://[hostname]/iam_farmer/api/v1.0/vendors/[vendor_id] | Retrieve information associated with specific vendor | For Vendor Homescreen|
+| GET | https://[hostname]/iam_farmer/api/v1.0/vendors/[vendor_id]/inventory | Retreive list of all bins and products and counts owned by vendor | For Inventory Management Screen|
+| GET | https://[hostname]/iam_farmer/api/v1.0/orders/[vendor_id] | Retrieve information on all orders with speficic vendor w+- query params | For Order Management Screen|
+| GET | https://[hostname]/iam_farmer/api/v1.0/orders/[order_id] | Retrieve details on specific order | For Order Details Screen |
+| GET | https://[hostname]/iam_farmer/api/v1.0/locations | Retrieve all locations containing bins | For Building out map |
+| POST | https://[hostname]/iam_farmer/api/v1.0/vendors | Create a new vendor | New Vendor Sign Up | 
+| POST | https://[hostname]/iam_farmer/api/v1.0/orders | Create a new order | New Order Screen |
+| POST | https://[hostname]/iam_farmer/api/v1.0/locations | Create a new location | For example if a new section was added to the building
+| POST | https://[hostname]/iam_farmer/api/v1.0/bins | Create a new bin | Inventory Mgmt Functionality - "Add New Bin" | 
+    
   
 #others  
 Questions Asked in Interview Prompt :   
